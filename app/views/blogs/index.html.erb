@@ -1,0 +1,13 @@
+<h1>Latest News:</h1>
+
+
+<% @blogs.each do |blog| %>
+  <div class='blog_display'>
+    <h2><%= link_to blog.title, blog_path(blog) %></h2>
+      <%= blog.media %>
+    <p><%= blog.content %></p>
+    <em class="author">By <%= blog.author %></em><br>
+    <span class='published_on'>Published on <%= blog.posted_on %></span>
+  </div>    
+<% end %>
+  <%= link_to 'New Blog', new_blog_path %>

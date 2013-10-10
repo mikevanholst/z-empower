@@ -1,0 +1,10 @@
+<h1>Cultural Assertions:</h1>
+
+
+<% @culsertions.each do |culsertion| %>
+  <div class='culsertion_display'>
+    <h2><%= link_to culsertion.title, culsertion_path(culsertion) %></h2>
+    <p><%= culsertion.content %></p>
+  </div>    
+<% end %>
+  <%= link_to 'New culsertion', new_culsertion_path %>

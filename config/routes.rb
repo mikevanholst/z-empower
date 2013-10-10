@@ -1,5 +1,6 @@
 ZEmpower::Application.routes.draw do
 
+  get "culsertions/index"
   resources :articles
   resources :blogs
   resources :culsertions

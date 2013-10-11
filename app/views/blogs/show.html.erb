@@ -3,11 +3,14 @@
   <h1><%= @blog.title %></h1>
   Posted on: <%= @blog.posted_on %>
 <p>
-  image can go here
+  <!-- image can go here -->
 </p>
+
 <div class="blog_content">
-  <%= @blog.content %>
+  <%=raw @blog.content %>
 </div>
+<br>
+
 <p>
   <strong>Author:</strong>
   <%= @blog.author %>

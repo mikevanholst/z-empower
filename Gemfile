@@ -13,6 +13,7 @@ gem 'responders',          github: 'plataformatec/responders'
 gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'ransack',             github: 'ernie/ransack'
 gem 'activeadmin',         github: 'gregbell/active_admin'
+
 gem 'formtastic',          github: 'justinfrench/formtastic'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
